@@ -112,14 +112,10 @@ export async function createInitialHelpMenu(client) {
     });
     embed.setTimestamp();
 
-    const bugReportButton = new ButtonBuilder()
-        .setCustomId(BUG_REPORT_BUTTON_ID)
-        .setLabel("Report Bug")
-        .setStyle(ButtonStyle.Danger);
 
     const supportButton = new ButtonBuilder()
-        .setLabel("Support Server")
-        .setURL("https://discord.gg/QnWNz2dKCE")
+        .setLabel("your a chud")
+        .setURL("https://discord.gg/HxAXXnN6Gq")
         .setStyle(ButtonStyle.Link);
 
     const selectRow = createSelectMenu(
