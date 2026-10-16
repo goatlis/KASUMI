@@ -112,8 +112,14 @@ export async function createInitialHelpMenu(client) {
     });
     embed.setTimestamp();
 
-
-    const supportButton = new ButtonBuilder()
+const bugReportButton = new ButtonBuilder()
+        .setCustomId(BUG_REPORT_BUTTON_ID)
+        .setLabel("Report Bug")
+        .setStyle(ButtonStyle.Danger);
+    
+    
+    
+         const supportButton = new ButtonBuilder()
         .setLabel("your a chud")
         .setURL("https://discord.gg/HxAXXnN6Gq")
         .setStyle(ButtonStyle.Link);
